@@ -1,3 +1,9 @@
+/*
+ * comment
+ * grep '^.\*' first.c
+ * Shigehisa KYODA
+ */
+
 #include <stdio.h>
 
 int main()
