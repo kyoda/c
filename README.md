@@ -2,6 +2,7 @@
 
 ## man
 
+| chapter | content | e.g. |
 |:---:|:---:|:---:|
 | 1 | command | ls |
 | 2 | system call | open |
