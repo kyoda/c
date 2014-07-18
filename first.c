@@ -6,10 +6,11 @@
 
 #include <stdio.h>
 
-char *p, b;
 
 int main()
 {
+  char *p, b;
+
   if ((p = "abc")) {
     printf("%p\n",p);
   } else if (*p == b) {
