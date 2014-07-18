@@ -1,5 +1,4 @@
-#
-#
+# comment
 
 first: first.c
 	gcc -Wall -O2 -std=c99 $^
