@@ -12,10 +12,10 @@ int main()
 {
   if ((p = "abc")) {
     printf("%p\n",p);
-  } else if (p == &b) {
+  } else if (*p == b) {
     printf("%p\n",&"abc");
   } else {
-    printf("%p\n",&"abc");
+    printf("%p\n",NULL);
   }
 
   return 0;
