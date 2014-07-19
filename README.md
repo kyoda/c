@@ -20,6 +20,8 @@
 
 > SYNOPSIS
 
+### intro
 
+> man 3 intro
 
 
