@@ -22,6 +22,7 @@
 
 ### intro
 
-> man 3 intro
+show the introduction of the chapter
+> man 1 intro
 
 
