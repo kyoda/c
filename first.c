@@ -10,7 +10,8 @@
 
 int main()
 {
-  char *p, b;
+  int b=0,add(const int aho);
+  char *p;
 
   if ((p = "abc")) {
     printf("%p\n",p);
@@ -20,6 +21,12 @@ int main()
     printf("%p\n",NULL);
   }
 
+  printf("%d\n",b = add(1));
+
   return 0;
 }
 
+int add(const int aho)
+{
+  return aho+1;
+}
