@@ -10,8 +10,10 @@
 
 int main()
 {
+
   int b=0,add(const int aho);
   char *p;
+  char moji[4] = {'a', 'b', 'c', '\n'};
 
   if ((p = "abc")) {
     printf("%p\n",p);
@@ -22,8 +24,10 @@ int main()
   }
 
   printf("%d\n",b = add(1));
+  printf("%s\n", moji);
 
   return 0;
+
 }
 
 int add(const int aho)
