@@ -14,6 +14,8 @@ int main()
   int b=0,add(const int aho);
   char *p;
   char moji[4] = {'a', 'b', 'c', '\n'};
+  char *mo;
+  mo = "aaa";
 
   if ((p = "abc")) {
     printf("%p\n",p);
