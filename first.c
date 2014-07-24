@@ -24,7 +24,7 @@ int main()
   }
 
   printf("%d\n",b = add(1));
-  printf("%s\n", moji);
+  printf("%s\n", moji+1);
 
   return 0;
 
