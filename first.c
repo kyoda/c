@@ -15,7 +15,9 @@ int main()
   char *p;
   char moji[4] = {'a', 'b', 'c', '\n'};
   char *mo;
-  mo = "aaa";
+  mo = moji;
+  printf("%p\n",moji);
+  printf("%p\n",&mo);
 
   if ((p = "abc")) {
     printf("%p\n",p);
