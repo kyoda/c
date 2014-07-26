@@ -16,8 +16,12 @@ int main()
   char moji[4] = {'a', 'b', 'c', '\n'};
   char *mo;
   mo = moji;
-  printf("%p\n",moji);
-  printf("%p\n",&mo);
+  printf("moji address: %p\n",moji);
+  printf("content of mo: %p\n",mo);
+  printf("mo address: %p\n",&mo);
+  char **mm;
+  mm = &mo;
+  printf("mo address : %p \n",mm);
 
   if ((p = "abc")) {
     printf("%p\n",p);
