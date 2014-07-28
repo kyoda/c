@@ -15,7 +15,6 @@ int main()
 /*
  * & is operator that return the operand address
  * % is operator that return the operand content
- *
  */
 
   int b=0,add(const int aho);
