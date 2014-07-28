@@ -11,6 +11,13 @@
 int main()
 {
 
+
+/*
+ * & is operator that return the operand address
+ * % is operator that return the operand content
+ *
+ */
+
   int b=0,add(const int aho);
   char *p;
   char moji[4] = {'a', 'b', 'c', '\n'};
