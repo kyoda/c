@@ -29,6 +29,11 @@ int main()
   mm = &mo;
   printf("mo address : %p \n",mm);
 
+  char *str;
+  str = "aiueo";
+  printf("%p\n",str+1);
+
+
   if ((p = "abc")) {
     printf("%p\n",p);
   } else if (*p == b) {
