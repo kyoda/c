@@ -25,6 +25,7 @@ int main()
   printf("moji address: %p\n",moji);
   printf("content of mo: %p\n",mo);
   printf("mo address: %p\n",&mo);
+
   char **mm;
   mm = &mo;
   printf("mo address : %p \n",mm);
@@ -43,7 +44,7 @@ int main()
   }
 
   printf("%d\n",b = add(1));
-  printf("%s\n", moji+1);
+  printf("%p\n", add);
 
   return 0;
 
