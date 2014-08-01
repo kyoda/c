@@ -43,8 +43,8 @@ int main()
     printf("%p\n",NULL);
   }
 
-  printf("%p\n",b = add(1));
-  printf("%p\n", add);
+  printf("%p\n", *add);
+  printf("%p\n", &add);
 
   return 0;
 
