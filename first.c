@@ -44,7 +44,7 @@ int main()
   }
 
   printf("%p\n", *add);
-  printf("%p\n", &add);
+  printf("%d\n", (&add)(2));
 
   return 0;
 
