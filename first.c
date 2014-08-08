@@ -11,7 +11,6 @@
 int main()
 {
 
-
 /*
  * & is operator that return the operand address
  * % is operator that return the operand content
@@ -44,7 +43,7 @@ int main()
   }
 
   printf("%p\n", *add);
-  (&******&********************printf)("%d\n", (&add)(2));
+  (*&**&****&****&*************printf)("%d\n", (&add)(2*2/2));
 
   return 0;
 
