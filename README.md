@@ -26,3 +26,18 @@ show the introduction of the chapter
 > man 1 intro
 
 
+
+## assenmble
+
+| 32 | 16 | 8 |
+|:--:|:--:|:--:|
+| EAX | AX | AH, AL |
+| EBX | BX | BH, BL |
+| ECX | CX | CH, CL |
+| EDX | DX | DH, DL |
+| ESI | SI ||
+| EDI | DI ||
+| EBP | BP ||
+| EIP | IP ||
+| ESP | SP ||
+
