@@ -29,6 +29,8 @@ show the introduction of the chapter
 
 ## assenmble
 
+### register
+
 | 32 | 16 | 8 |
 |:--:|:--:|:--:|
 | EAX | AX | AH, AL |
@@ -40,4 +42,13 @@ show the introduction of the chapter
 | EBP | BP ||
 | EIP | IP ||
 | ESP | SP ||
+
+### mnemonic
+
+> movb $0x01 %al
+
+opecode: movb
+operand: $0x01, %al
+
+
 

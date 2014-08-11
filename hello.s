@@ -18,7 +18,7 @@ main:
 	call	__main
 	leaq	.LC0(%rip), %rcx
 	call	puts
-	movl	$0, %eax
+	movl	$0, %eax # stdin
 	addq	$32, %rsp
 	popq	%rbp
 	ret
