@@ -51,4 +51,15 @@ opecode: movb
 operand: $0x01, %al
 
 
+### opecode
+
+| bit | mean | e.g. | | register |
+|:--:|:--:|:--:|:--:|:--:|
+| 8 | byte | movb | | |
+| 16 | word | movw | eXtend | %ax |
+| 32 | long | movl | Extend | %eax |
+
+number > $
+register > % 
+
 
