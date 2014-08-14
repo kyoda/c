@@ -62,7 +62,7 @@ operand: $0x01, %al
 | 64 | quadword | movq | | |
 
 
-number > $
+number > $  
 register > % 
 
 
