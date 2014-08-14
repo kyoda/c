@@ -56,8 +56,11 @@ operand: $0x01, %al
 | bit | mean | e.g. | | register |
 |:--:|:--:|:--:|:--:|:--:|
 | 8 | byte | movb | | |
-| 16 | word | movw | eXtend | %ax |
+| 16 | words | movw | eXtend | %ax |
 | 32 | long | movl | Extend | %eax |
+| 32 | doublewords | movd | | |
+| 64 | quadword | movq | | |
+
 
 number > $
 register > % 
