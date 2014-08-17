@@ -31,17 +31,17 @@ show the introduction of the chapter
 
 ### register
 
-| 32 | 16 | 8 |
-|:--:|:--:|:--:|
-| EAX | AX | AH, AL |
-| EBX | BX | BH, BL |
-| ECX | CX | CH, CL |
-| EDX | DX | DH, DL |
-| ESI | SI ||
-| EDI | DI ||
-| EBP | BP ||
-| EIP | IP ||
-| ESP | SP ||
+| 32 | 16 | 8 | mean |
+|:--:|:--:|:--:|:--:|
+| EAX | AX | AH, AL | accumulater |
+| EBX | BX | BH, BL | base register |
+| ECX | CX | CH, CL | counter register |
+| EDX | DX | DH, DL | |
+| ESI | SI || source |
+| EDI | DI || destination |
+| EBP | BP || base pointer |
+| EIP | IP || instruction pointer |
+| ESP | SP || stack pointer |
 
 ### mnemonic
 
