@@ -45,6 +45,11 @@ int main()
   printf("%p\n", *add);
   (*&**&****&****&*********printf)("%d\n", (**&****add)(2*2/2));
 
+
+  printf("%p\n","aiueo");
+  //why same address?
+  printf("%p\n","aiueo");
+
   return 0;
 
 }
@@ -53,3 +58,5 @@ int add(const int aho)
 {
   return aho+1;
 }
+
+
