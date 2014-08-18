@@ -37,7 +37,7 @@ int main()
   if ((p = "abc")) {
     printf("%p\n",p);
   } else if (*p == b) {
-    printf("%p\n",&"abc"+1);
+    printf("%p\n",(&"abc"+1));
   } else {
     printf("%p\n",NULL);
   }
