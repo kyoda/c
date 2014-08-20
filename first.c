@@ -24,6 +24,7 @@ int main()
   printf("moji address: %p\n",moji);
   printf("content of mo: %p\n",mo);
   printf("mo address: %p\n",&mo);
+  printf("%c",'a');
 
   char **mm;
   mm = &mo;
