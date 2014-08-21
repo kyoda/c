@@ -29,6 +29,11 @@ show the introduction of the chapter
 
 ## assenmble
 
+
+### compile
+
+> gcc hello.s
+
 ### register
 
 | 32 | 16 | 8 | mean |
@@ -64,5 +69,6 @@ operand: $0x01, %al
 
 number > $  
 register > % 
+
 
 
