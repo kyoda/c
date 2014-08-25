@@ -11,21 +11,24 @@ int main() {
     int sec;
     signal(SIGCHLD, sigchld_handler);
 
-    for(;;) {
+    for (;;) {
 
         int pid;
         scanf("%d", &sec);
         pid = fork();
 
-        if(pid < 0) {
+        if (pid < 0) {
+
             perror("fork");
             exit(1);
-        }
-        else if(pid == 0) {
+
+        } else if (pid == 0) {
+
             fprintf(stderr, "hello\n");
             sleep(sec);
             fprintf(stderr, "bye\n");
             exit(0);
+
         }
 
     }
