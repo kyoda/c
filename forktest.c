@@ -6,7 +6,8 @@
 
 void sigchld_handler(int);
 
-int main() {
+int main()
+{
 
     int sec;
     signal(SIGCHLD, sigchld_handler);
@@ -36,7 +37,8 @@ int main() {
 }
 
 
-void sigchld_handler(int x) {
+void sigchld_handler(int x)
+{
 
     int chld;
 
