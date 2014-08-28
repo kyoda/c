@@ -5,6 +5,7 @@
 #include <sys/wait.h>
 
 void sigchld_handler(int);
+int *sort(const int *list);
 
 int main()
 {
@@ -15,6 +16,7 @@ int main()
     for (;;) {
 
         int pid;
+        printf("Input number...");
         scanf("%d", &sec);
         pid = fork();
 
@@ -25,6 +27,10 @@ int main()
 
         } else if (pid == 0) {
 
+            int list[] = {2, 7, 5, 1, 9, 6};
+            int *p;
+            p = sort(list);
+
             fprintf(stderr, "hello\n");
             sleep(sec);
             fprintf(stderr, "bye\n");
@@ -33,6 +39,22 @@ int main()
         }
 
     }
+
+}
+
+
+int *sort(const int *list)
+{
+
+  const int *p;
+  p = list;
+  int i;
+
+  for (i = 0; i<6; i++) {
+    printf("%d\n",p[i]);
+  }
+
+  return p;
 
 }
 
