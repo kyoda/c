@@ -22,26 +22,25 @@ int *sort(const int list[], const int listNum)
 {
 
   int p[listNum];
-  int i;
+  int limit, i, tmp = 0;
 
-  memcpy(p, list, listNum);
+  memcpy(p, list, listNum * sizeof(int));
 
-  int index = 0, tmp = 0;
-
+  for (i = 0; i<listNum; i++) {
+    printf("%d ",p[i]);
+  }
+  printf("\n");
   
-  for (i = 0; i<listNum - 1; i++) {
-    if (p[i] > p[i+1]) {
-       tmp = p[i];  
-       p[i] = p[i+1];
-       p[i+1] = tmp;
-       tmp = 0;
-    }
-    
-    if (i == listNum - 1) {
-      index++;
-      i = index; 
-    }
+  for (limit = -1; limit < listNum - 2; limit++) {
+    for (i = listNum - 2; i > limit; i--) {
+      if (p[i] > p[i+1]) {
+        tmp = p[i];  
+        p[i] = p[i+1];
+        p[i+1] = tmp;
+        tmp = 0;
+      }
 
+    }
   }
 
   for (i = 0; i<listNum; i++) {
