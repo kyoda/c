@@ -6,19 +6,19 @@
 int main()
 {
 
-  int *sort(const int list[], const int listNum);
+  int *bubbleSort(const int list[], const int listNum);
   int list[] = {2, 7, 5, 1, 9, 6};
   //const int listNum = sizeof list;
   int listNum = 6;
   int *p;
 
-  p = sort(list, listNum);
+  p = bubbleSort(list, listNum);
 
   return 0;
 
 }
 
-int *sort(const int list[], const int listNum)
+int *bubbleSort(const int list[], const int listNum)
 {
 
   int p[listNum];
