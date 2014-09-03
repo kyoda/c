@@ -8,8 +8,7 @@ int main()
 
   int *bubbleSort(const int list[], const int listNum);
   int list[] = {2, 7, 5, 1, 9, 6};
-  //const int listNum = sizeof list;
-  int listNum = 6;
+  const int listNum = sizeof(list) / sizeof(int);
   int *p;
 
   p = bubbleSort(list, listNum);
