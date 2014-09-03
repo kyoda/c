@@ -6,29 +6,33 @@
 int main()
 {
 
-  int *bubbleSort(const int list[], const int listNum);
+  void bubbleSort(int p[], const int list[], const int listNum);
   int list[] = {2, 7, 5, 1, 9, 6};
   const int listNum = sizeof(list) / sizeof(int);
-  int *p;
-
-  p = bubbleSort(list, listNum);
-
-  return 0;
-
-}
-
-int *bubbleSort(const int list[], const int listNum)
-{
-
   int p[listNum];
-  int limit, i, tmp = 0;
+  int i;
 
-  memcpy(p, list, listNum * sizeof(int));
+  for (i = 0; i<listNum; i++) {
+    printf("%d ",list[i]);
+  }
+  printf("\n");
+
+  bubbleSort(p, list, listNum);
 
   for (i = 0; i<listNum; i++) {
     printf("%d ",p[i]);
   }
   printf("\n");
+
+  return 0;
+
+}
+
+void bubbleSort(int p[], const int list[], const int listNum)
+{
+
+  int limit, i, tmp = 0;
+  memcpy(p, list, listNum * sizeof(int));
   
   for (limit = -1; limit < listNum - 2; limit++) {
     for (i = listNum - 2; i > limit; i--) {
@@ -41,13 +45,6 @@ int *bubbleSort(const int list[], const int listNum)
 
     }
   }
-
-  for (i = 0; i<listNum; i++) {
-    printf("%d ",p[i]);
-  }
-  printf("\n");
-
-  return 0;
 
 }
 
