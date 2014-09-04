@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 #include <memory.h>
 
 
@@ -7,22 +8,36 @@ int main()
 {
 
   void bubbleSort(int p[], const int list[], const int listNum);
-  int list[] = {2, 7, 5, 1, 9, 6};
-  const int listNum = sizeof(list) / sizeof(int);
-  int p[listNum];
   int i;
 
+  srand((unsigned)time(NULL));
+  const int listNum = rand() % 100;
+  int list[listNum];
+  int p[listNum];
+
+
+  for (i = 0; i<listNum; i++) {
+    list[i] = rand() % 1000;
+  }
+
+
+  // print array
+  printf("array: \n");
   for (i = 0; i<listNum; i++) {
     printf("%d ",list[i]);
   }
   printf("\n");
 
+  // sort
   bubbleSort(p, list, listNum);
 
+  // print result
+  printf("sorting array: \n");
   for (i = 0; i<listNum; i++) {
     printf("%d ",p[i]);
   }
   printf("\n");
+
 
   return 0;
 
