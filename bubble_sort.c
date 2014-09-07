@@ -22,37 +22,21 @@ int main()
   }
 
 
-  // print array
-  /*
-  printf("array: \n");
-  for (i = 0; i<listNum; i++) {
-    printf("%d ",list[i]);
-  }
-  printf("\n");
-  */
   printf("finish create array \n");
-  
 
   // sort
   clock_t start_t = clock();
   bubbleSort(p, list, listNum);
   double stop_t = (double)(clock() - start_t) / CLOCKS_PER_SEC;
 
-  // print result
-  /*
-  printf("sorting array: \n");
-  for (i = 0; i<listNum; i++) {
-    printf("%d ",p[i]);
-  }
-  printf("\n");
-  */
-
-
   printf("%f sec\n",stop_t);
 
   return 0;
 
 }
+
+
+
 
 void bubbleSort(int p[], const int list[], const int listNum)
 {
