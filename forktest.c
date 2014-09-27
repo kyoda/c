@@ -28,16 +28,17 @@ int main()
 
         } else if (pid == 0) {
 
-            fprintf(stderr, "hello\n");
-            sleep(sec);
-            fprintf(stderr, "bye\n");
+            FILE *fp;
+            fp = fopen("text.txt", "a+");
+            fprintf(fp, "Test... \n");
+            fclose(fp);
+
             exit(0);
 
         } else {
 
           printf("%d \n",pid);
           sleep(3);
-
 
         }
 
