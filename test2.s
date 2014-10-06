@@ -6,7 +6,7 @@ msgend: .equ len, msgend - msg
 .global main
 main:
     movl $100, %eax
-    movl $100, %ebx
+    movl $103, %ebx
     cmpl %eax, %ebx
     je print
 end:
