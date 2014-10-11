@@ -1,4 +1,4 @@
-# study c
+# Study c
 
 ## man
 
