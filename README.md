@@ -15,6 +15,7 @@
 
 + man 1 read (man read)
 + man 2 read
++ man 3 printf
 
 ### locate <***.h> ?
 
@@ -25,5 +26,9 @@
 show the introduction of the chapter
 > man 1 intro
 
+### gcc 
+
+e.g.
++ gcc -O2 -Wall -o clock.o -lrt clock.c
 
 
