@@ -13,7 +13,12 @@ int main()
 
   unsigned long long max;
   max = -1;
+  
+  unsigned long long year;
+  year = max / (1000 * 1000 * 1000) / (60 * 60 * 24 * 365);
+
   printf("%llu\n", max);
+  printf("%llu\n", year);
 
   return 0;
 }
