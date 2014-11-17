@@ -12,7 +12,7 @@ int main()
 
 
   unsigned long long max;
-  max = -1;
+  max = ~0;
   
   unsigned long long year;
   year = max / (1000 * 1000 * 1000) / (60 * 60 * 24 * 365);
