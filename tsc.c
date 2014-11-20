@@ -9,14 +9,20 @@ int main()
 
   asm volatile("rdtsc": "=a" (lo), "=d" (hi));
   tsc = ((unsigned long long)lo | ((unsigned long long)hi << 32));
-  printf("%llu\n", tsc);
+  printf("tsc = %llu\n", tsc);
 
-  unsigned long long hz, day, sec, hour;
+  unsigned long long hz, day, tmp;
+  int hour, min, sec;
   hz = 2333338000;
   day = tsc / hz / (60 * 60 * 24);
-  sec = (tsc / hz) - (60 * 60 * 24);
-  printf("%llu\n", day);
-  printf("%llu\n", hour);
+  tmp = (tsc / hz) % (60 * 60 * 24);
+  hour = (int)tmp / (60 * 60);
+  tmp = tmp % (60 * 60);
+  min = (int)tmp / 60;
+  tmp = tmp % 60;
+  sec = (int)tmp;
+
+  printf("%llu, %d:%d:%d\n", day, hour, min, sec);
 
   return 0;
 
