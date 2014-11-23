@@ -22,7 +22,6 @@ int main ()
   */
 
 
-  
   unsigned long lo, hi;
   unsigned long long tsc_begin, tsc_end;
   double clock;
