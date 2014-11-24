@@ -36,7 +36,7 @@ int main ()
 
   clock = (double)((tsc_end - tsc_begin) / 1000000);
 
-  printf("%.2f MHz\n", clock);
+  printf("%.3f MHz\n", clock);
 
   return 0;
 
