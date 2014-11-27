@@ -11,7 +11,7 @@ int main()
 {
   void *i;
   i = std::cout << "aiueo\n";
-  printf("%p",i);
+  printf("%p\n",i);
 
   int a;
   a = Multiply<int>(3, 5);
