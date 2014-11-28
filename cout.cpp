@@ -13,9 +13,9 @@ int main()
   i = std::cout << "aiueo\n";
   printf("%p\n",i);
 
-  int a;
-  a = Multiply<int>(3, 5);
-  printf("%d\n",a);
+  float a;
+  a = Multiply<float>(3, 5);
+  printf("%f\n",a);
 
   return 0;
 
