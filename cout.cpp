@@ -1,5 +1,5 @@
 #include <iostream>
-#include <stdio.h>
+#include <cstdio>
 
 template<typename T_n>
 T_n Multiply(T_n A, T_n B)
@@ -14,7 +14,7 @@ int main()
   printf("%p\n",i);
 
   float a;
-  a = Multiply<float>(3, 5);
+  a = Multiply<float>(3.4, 5.123);
   printf("%f\n",a);
 
   return 0;
