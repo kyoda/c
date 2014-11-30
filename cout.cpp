@@ -14,7 +14,7 @@ int main()
   printf("%p\n",i);
 
   float a;
-  a = Multiply<float>(3.4, 5.123);
+  a = Multiply<float>(3.4, 5);
   printf("%f\n",a);
 
   return 0;
