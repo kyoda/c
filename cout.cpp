@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdio>
+using std::cout;
 
 template<typename T_n>
 T_n Multiply(T_n A, T_n B)
@@ -10,7 +11,7 @@ T_n Multiply(T_n A, T_n B)
 int main()
 {
   void *i;
-  i = std::cout << "aiueo\n";
+  i = cout << "aiueo\n";
   printf("%p\n",i);
 
   float a;
