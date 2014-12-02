@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdio>
-using std::cout;
+using namespace std;
 
 template<typename T_n>
 T_n Multiply(T_n A, T_n B)
