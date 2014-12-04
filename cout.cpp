@@ -10,6 +10,7 @@ T_n Multiply(T_n A, T_n B)
 
 int main()
 {
+
   void *i;
   i = cout << "aiueo\n";
   printf("%p\n",i);
