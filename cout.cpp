@@ -25,7 +25,7 @@ int main()
   a = Multiply<float>(3.4, 5);
   printf("%f\n",a);
   printf("int: %lu\n", sizeof(int));
-  printf("%d\n", getInt<int>(3.4));
+  printf("%f\n", getInt<float>(3.4));
 
 
   return 0;
