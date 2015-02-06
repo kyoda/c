@@ -28,6 +28,9 @@ int main()
   printf("%f\n", getInt<float>(3.4));
 
 
+  5;
+
+
   return 0;
 
 }
