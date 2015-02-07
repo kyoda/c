@@ -8,11 +8,9 @@ T_n Multiply(T_n A, T_n B)
   return (T_n)(A * B + 3);
 }
 
+
 template<typename AA>
-AA getInt(AA x)
-{
-  return (AA)x;
-}
+AA getInt(AA x);
 
 int main()
 {
@@ -37,3 +35,8 @@ int main()
 
 
 
+template<typename AA>
+AA getInt(AA x)
+{
+  return (AA)x;
+}
