@@ -1,5 +1,7 @@
 #include <iostream>
 #include <cstdio>
+#include <algorithm>
+
 using namespace std;
 
 template<typename T_n>
