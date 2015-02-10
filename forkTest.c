@@ -4,7 +4,19 @@
 #include <signal.h>
 #include <sys/wait.h>
 
-void sigchld_handler(int);
+void sigchld_handler(int x) {
+
+  int chld;
+
+  chld = waitpid(-1, NULL, WNOHANG);
+
+  if(chld == -1) {
+    perror("wait");
+    exit(1);
+  }
+
+}
+
 
 int main() {
   int sec;
@@ -34,15 +46,3 @@ int main() {
 }
 
 
-void sigchld_handler(int x) {
-
-  int chld;
-
-  chld = waitpid(-1, NULL, WNOHANG);
-
-  if(chld == -1) {
-    perror("wait");
-    exit(1);
-  }
-
-}
