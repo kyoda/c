@@ -25,6 +25,7 @@ int main() {
   for(;;) {
 
     int pid;
+    printf("Please set time [sec] (child process alive time...)\n");
     scanf("%d", &sec);
     pid = fork();
 
