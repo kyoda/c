@@ -23,8 +23,9 @@ int main() {
   int sec;
   signal(SIGCHLD, sigchld_handler);
   
-  rep(i, 10)
+  rep(i, 10) {
     printf("%d\n", i);
+  }
 
   for(;;) {
 
