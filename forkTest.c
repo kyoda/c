@@ -27,8 +27,10 @@ int main() {
   
   char *a = "aiueo";
   rep(i, strlen(a)) {
-    printf("%d: %s\n", i, a+i);
+    printf("%d: %s\r", i, a+i);
+    sleep(1);
   }
+  printf("\n");
 
   for(;;) {
 
