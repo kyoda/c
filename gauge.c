@@ -12,11 +12,13 @@ int main(void)
   for (int i = 0; i < l; i++) {
     str[i] = ' ';
   } 
+  str[100] = '\0';
 
-  for (int i = 0; i < 100; i++) {
+  for (int i = 0; i < 101; i++) {
+    printf("[%s]: %3d %% ", str, i);
     str[i] = '#';
-    printf("[%s]: %3d %%\r", str, i);
     sleep(1);
+    printf("%c", i == 100?'\n':'\r');
   }
 
   return 0;
