@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
 
@@ -10,16 +11,19 @@ int main(void)
 
   setbuf(stdout, NULL);
 
-  char str[100];
+  char str[101];
   int l = sizeof str;
-  for (i = 0; i < l; i++) {
+  for (i = 0; i < l - 1; i++) {
     str[i] = ' ';
   } 
+  str[l - 1] = '\0';
 
-  useconds_t wait_time = 100000;
+  useconds_t wait_time = 1000;
+  unsigned int s = 1;
   for (i = 0; i < l + 1; i++) {
     printf("[%s]: %3d %% ", str, i);
-    usleep(wait_time);
+    s = rand() % 1000;
+    usleep(wait_time * s);
     if (i == 100) {
       printf("\n");
       break;
