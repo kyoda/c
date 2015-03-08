@@ -20,7 +20,7 @@ int main(void)
 
   useconds_t wait_time = 1000;
   unsigned int s = 1;
-  for (i = 0; i < l + 1; i++) {
+  for (i = 0; i < l; i++) {
     printf("[%s]: %3d %% ", str, i);
     s = rand() % 1000;
     usleep(wait_time * s);
