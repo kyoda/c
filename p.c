@@ -2,14 +2,17 @@
 
 int main(void)
 {
-  int *p, i = 3;
+  int *p, i;
   p = &i;
 
   if (!p) {
-    printf("no\n");
+    printf("no p\n");
   } else {
     printf("%d\n", *p);
+    printf("i = %d\n", i);
   }
+
 
   return 0;
 }
+
