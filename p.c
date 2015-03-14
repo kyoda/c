@@ -13,6 +13,9 @@ int main(void)
     printf("i = %d\n", i);
   }
 
+  char *str = "aiueo";
+  printf("%s\n", str);
+
 
   return 0;
 }
