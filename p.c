@@ -14,7 +14,7 @@ int main(void)
   }
 
   char *str = "aiueo";
-  printf("%s\n", str);
+  printf("%s : %lu\n", str, sizeof str);
 
 
   return 0;
