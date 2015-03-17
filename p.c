@@ -14,7 +14,10 @@ int main(void)
   }
 
   char *str = "aiueoaiueo";
-  printf("String = %s, Length = %lu\n", str, (sizeof str));
+  printf("String = %s, Length = %lu\n", str, sizeof(str));
+
+  char str2[11];
+  printf("String = %s, Length = %lu\n", str2, sizeof(str2));
 
 
   return 0;
