@@ -13,8 +13,8 @@ int main(void)
     printf("i = %d\n", i);
   }
 
-  char *str = "aiueo";
-  printf("String = %s, Length = %lu\n", str, sizeof str);
+  char *str = "aiueoaiueo";
+  printf("String = %s, Length = %lu\n", str, (sizeof str));
 
 
   return 0;
