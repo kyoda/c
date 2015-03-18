@@ -17,7 +17,7 @@ int main(void)
   printf("String = %s, Length = %lu\n", str, sizeof(str));
 
   char str2[11];
-  printf("String = %s, Length = %lu\n", str2, sizeof(str2));
+  printf("String = %s, Length = %lu\n", str2, sizeof(str2) / sizeof(char));
 
 
   return 0;
