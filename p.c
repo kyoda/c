@@ -13,6 +13,7 @@ int main(void)
     printf("i = %d\n", i);
   }
 
+
   char *str = "aiueoaiueo";
   printf("String = %s, Length = %lu\n", str, sizeof(str) / sizeof(char));
 
