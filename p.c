@@ -3,7 +3,7 @@
 int main(void)
 {
   int *p, i;
-  i = '\0';
+  i = 0;
   p = &i;
 
   if (!p) {
