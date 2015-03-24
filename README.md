@@ -26,6 +26,13 @@
 show the introduction of the chapter
 > man 1 intro
 
+### help 
+
+> man man
+
+locate 'printf' string
+> man -k printf
+
 ### gcc 
 
 e.g.
