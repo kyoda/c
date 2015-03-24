@@ -21,6 +21,7 @@ int main(void)
   printf("String = %s, Length = %lu\n", str2, sizeof(str2) / sizeof(char));
 
   char *q;
+  //char *q = "aiueo"; //x
   q = str2;
   printf("String = %s, Length = %lu\n", q, sizeof(q) / sizeof(char));
 
