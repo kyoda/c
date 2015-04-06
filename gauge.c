@@ -18,12 +18,12 @@ int main(void)
   } 
   str[l - 1] = '\0';
 
-  useconds_t wait_time = 1000;
+  useconds_t wait_time_usec = 1000;
   unsigned int s = 1;
   for (i = 0; i < l; i++) {
     printf("[%s]: %3d %% ", str, i);
     s = rand() % 1000;
-    usleep(wait_time * s);
+    usleep(wait_time_usec * s);
     if (i == 100) {
       printf("\n");
       break;
