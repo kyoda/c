@@ -12,6 +12,7 @@ int main(int argc, char **argv)
     printf("%d\n", (int)stat_buf.st_ino);
     printf("%d\n", (int)stat_buf.st_dev);
     printf("%o\n", (int)stat_buf.st_mode);
+    printf("%d\n", (int)stat_buf.st_nlink);
   }
 
   return 0;
