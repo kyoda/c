@@ -13,6 +13,8 @@ int main(int argc, char **argv)
     printf("%d\n", (int)stat_buf.st_dev);
     printf("%o\n", (int)stat_buf.st_mode);
     printf("%d\n", (int)stat_buf.st_nlink);
+    printf("%d\n", (int)stat_buf.st_uid);
+    printf("%d\n", (int)stat_buf.st_gid);
   }
 
   return 0;
