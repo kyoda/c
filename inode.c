@@ -15,6 +15,7 @@ int main(int argc, char **argv)
     printf("%d\n", (int)stat_buf.st_nlink);
     printf("%d\n", (int)stat_buf.st_uid);
     printf("%d\n", (int)stat_buf.st_gid);
+    printf("%d\n", (int)stat_buf.st_rdev);
   }
 
   return 0;
