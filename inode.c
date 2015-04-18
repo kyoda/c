@@ -19,6 +19,7 @@ int main(int argc, char **argv)
     printf("%d\n", (int)stat_buf.st_size);
     printf("%d\n", (int)stat_buf.st_atime);
     printf("%d\n", (int)stat_buf.st_mtime);
+    printf("%d\n", (int)stat_buf.st_ctime);
   }
 
   return 0;
