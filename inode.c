@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <time.h>
 #include <sys/stat.h>
 
 
@@ -20,6 +21,7 @@ int main(int argc, char **argv)
     printf("%d\n", (int)stat_buf.st_atime);
     printf("%d\n", (int)stat_buf.st_mtime);
     printf("%d\n", (int)stat_buf.st_ctime);
+    const time_t t = stat_buf.st_ctime;
   }
 
   return 0;
