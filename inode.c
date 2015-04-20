@@ -22,6 +22,7 @@ int main(int argc, char **argv)
     printf("%d\n", (int)stat_buf.st_mtime);
     printf("%d\n", (int)stat_buf.st_ctime);
     const time_t t = stat_buf.st_ctime;
+    printf("%s\n", ctime(&t));
   }
 
   return 0;
