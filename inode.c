@@ -21,8 +21,11 @@ int main(int argc, char **argv)
     printf("%d\n", (int)stat_buf.st_atime);
     printf("%d\n", (int)stat_buf.st_mtime);
     printf("%d\n", (int)stat_buf.st_ctime);
-    const time_t t = stat_buf.st_ctime;
+
+    const time_t t = stat_buf.st_atime;
     printf("%s\n", ctime(&t));
+
+    printf("%d\n", (int)stat_buf.st_blksize);
   }
 
   return 0;
