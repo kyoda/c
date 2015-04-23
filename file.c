@@ -7,8 +7,10 @@
 int main()
 {
 
-  int fd = open("README.md", O_APPEND);
+  int fd = open("README.md", O_RDONLY);
+  int fd2 = open("README.md", O_RDONLY);
   printf("%d\n", fd);
+  printf("%d\n", fd2);
   //int r = flock(fd, LOCK_SH);
 
   return 0;
