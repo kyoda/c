@@ -14,7 +14,10 @@ int main()
   //int r = flock(fd, LOCK_SH);
 
   FILE *fp = fopen("README.md", "r");
-
+  printf("%d\n", fileno(fp));
+  int r = flock(fileno(fp), LOCK_SH);
+  
+  printf("%d\n", r);
 
   return 0;
 }
