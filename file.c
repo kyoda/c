@@ -13,8 +13,8 @@ int main()
   printf("%d\n", fd2);
   //int r = flock(fd, LOCK_SH);
 
-  FILE *fp;
-  fp = fopen("README.md", "r");
+  FILE *fp = fopen("README.md", "r");
+
 
   return 0;
 }
