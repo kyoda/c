@@ -3,6 +3,7 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <sys/file.h>
+#include <stdlib.h>
 
 
 int main()
@@ -15,6 +16,9 @@ int main()
   //int r = flock(fd, LOCK_SH);
 
   FILE *fp = fopen("README.md", "r");
+  if (fp == NULL) {
+    exit(EXIT_FAILURE);
+  }
   printf("%d\n", fileno(fp));
   int r = flock(fileno(fp), LOCK_SH);
   
