@@ -15,10 +15,12 @@ int main()
   printf("%d\n", fd2);
   //int r = flock(fd, LOCK_SH);
 
-  FILE *fp = fopen("README.md", "r");
+  FILE *fp = fopen("READMEEE.md", "r");
   if (fp == NULL) {
+    printf("%d", EXIT_FAILURE);
     exit(EXIT_FAILURE);
   }
+
   printf("%d\n", fileno(fp));
   int r = flock(fileno(fp), LOCK_SH);
   
