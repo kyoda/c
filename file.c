@@ -4,6 +4,7 @@
 #include <fcntl.h>
 #include <sys/file.h>
 #include <stdlib.h>
+#include <unistd.h>
 
 
 int main()
@@ -34,6 +35,13 @@ int main()
   
   printf("%d\n", r);
 
+  sleep(30);
+
   return 0;
+
 }
+
+
+
+
 
