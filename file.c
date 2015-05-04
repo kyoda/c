@@ -17,7 +17,7 @@ int main()
   //int r = flock(fd, LOCK_SH);
 
 
-  // /usr/include/lib/stdlib.h
+  // in /usr/include/lib/stdlib.h
   /* We define these the same for all machines.
    *    Changes from this to the outside world should be done in `_exit'.  */
   //#define EXIT_FAILURE  1 /* Failing exit status.  */
