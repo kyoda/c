@@ -26,7 +26,7 @@ int main()
 
   FILE *fp = fopen("READMEEE.md", "r");
   if (fp == NULL) {
-    printf("%d", EXIT_FAILURE);
+    printf("%d", EXIT_SUCCESS);
     sleep(30);
     exit(EXIT_FAILURE);
   }
