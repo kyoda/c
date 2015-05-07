@@ -24,10 +24,9 @@ int main()
   //#define EXIT_SUCCESS  0 /* Successful exit status.  */
 
 
-  FILE *fp = fopen("READMEEE.md", "r");
+  FILE *fp = fopen("README.md", "r");
   if (fp == NULL) {
     printf("%d", EXIT_SUCCESS);
-    sleep(30);
     exit(EXIT_FAILURE);
   }
 
@@ -35,7 +34,9 @@ int main()
   int r = flock(fileno(fp), LOCK_SH);
   
   printf("%d\n", r);
+  sleep(30);
 
+  printf("finish\n");
 
   return 0;
 
