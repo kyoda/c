@@ -21,10 +21,12 @@ int main()
 void ifcal()
 {
 
-  if () {
+  int a = 0, b = 0;
 
-  } else if () {
-    
+  if (a == 0) {
+    b += a;     
+  } else if (a == 1) {
+    b += a;     
   }
 
   printf("ifcal: %d sec\n");
