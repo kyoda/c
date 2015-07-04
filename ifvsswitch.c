@@ -18,6 +18,7 @@ int ifcal()
     }
   }
 
+  printf("b = %d\n", b);
   return b;
 
 }
