@@ -40,7 +40,7 @@ int ifcal()
 
   double stop_t = (double)(clock() - start_t) / CLOCKS_PER_SEC;
 
-  printf("b = %d\n", (int)b);
+  printf("a = %d, b = %f\n", a, b);
   printf("ifcal: %f sec\n", stop_t);
 
   return (int)b;
@@ -95,7 +95,7 @@ int switchcal()
 
   double stop_t = (double)(clock() - start_t) / CLOCKS_PER_SEC;
 
-  printf("b = %d\n", (int)b);
+  printf("a = %d, b = %f\n", a, b);
   printf("switchcal: %f sec\n", stop_t);
 
 
