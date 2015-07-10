@@ -14,7 +14,7 @@ int ifcal()
   clock_t start_t = clock();
 
   for (; i < MAX; i++) {
-    a = rand();
+    a = rand() % 10;
     if (a == 0) {
       b += (double)a;     
     } else if (a == 1) {
@@ -58,7 +58,7 @@ int switchcal()
   clock_t start_t = clock();
 
   for (; i < MAX; i++) {
-    a = rand();
+    a = rand() % 10;
     switch (a) {
     case 0:
       b += (double)a;
