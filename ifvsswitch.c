@@ -4,7 +4,7 @@
 
 #define MAX 100000000
 
-int ifcal()
+float ifcal()
 {
 
   int a = 0;
@@ -41,13 +41,13 @@ int ifcal()
   double stop_t = (double)(clock() - start_t) / CLOCKS_PER_SEC;
 
   printf("a = %d, b = %f\n", a, b);
-  printf("ifcal: %f sec\n", stop_t);
+  //printf("ifcal: %f sec\n", stop_t);
 
-  return (int)b;
+  return stop_t;
 
 }
 
-int switchcal()
+float switchcal()
 {
 
   int a = 0;
@@ -96,24 +96,33 @@ int switchcal()
   double stop_t = (double)(clock() - start_t) / CLOCKS_PER_SEC;
 
   printf("a = %d, b = %f\n", a, b);
-  printf("switchcal: %f sec\n", stop_t);
+  //printf("switchcal: %f sec\n", stop_t);
 
 
-  return b;
+  return stop_t;
 
 }
 
 int main()
 {
   
-
   srand((unsigned)time(NULL));
 
-  ifcal();
-  switchcal();
+  int i, try_num = 10;
+  float sum;
 
-  printf("%d\n", rand());
+  //if
+  for (sum = 0, i = 0; i < try_num; i++) {
+    sum += ifcal();
+  }
+  printf("if = %f\n", sum / (float)try_num);
 
+  //switch
+  for (sum = 0, i = 0; i < try_num; i++) {
+    sum += switchcal();
+  }
+  printf("switch = %f\n", sum / (float)try_num);
+  
   return 0;
 
 }
