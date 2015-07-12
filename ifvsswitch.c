@@ -115,13 +115,13 @@ int main()
   for (sum = 0, i = 0; i < try_num; i++) {
     sum += ifcal();
   }
-  printf("if = %f\n", sum / (float)try_num);
+  printf("if = %f\n", (sum / (float)try_num));
 
   //switch
   for (sum = 0, i = 0; i < try_num; i++) {
     sum += switchcal();
   }
-  printf("switch = %f\n", sum / (float)try_num);
+  printf("switch = %f\n", (sum / (float)try_num));
   
   return 0;
 
