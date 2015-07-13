@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define MAX 100000000
+#define MAX 10000000
 
 float ifcal()
 {
