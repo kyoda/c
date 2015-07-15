@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     printf("st_ino = %d\n", (int)stat_buf.st_ino);
     printf("st_dev = %d\n", (int)stat_buf.st_dev);
     printf("st_mode = %o\n", (int)stat_buf.st_mode);
-    printf("%d\n", (int)stat_buf.st_nlink);
+    printf("st_nlink = %d\n", (int)stat_buf.st_nlink);
     printf("%d\n", (int)stat_buf.st_uid);
     printf("%d\n", (int)stat_buf.st_gid);
     printf("%d\n", (int)stat_buf.st_rdev);
