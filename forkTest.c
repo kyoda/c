@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 #include <string.h>
 
-#define rep(i, n) for(int i = 0; i<n; i++) //init in loop > c99
+#define rep(i, n) for(int i = 0; i < n; i++) //init in loop > c99
 
 void sigchld_handler(int x) {
 
@@ -40,16 +40,16 @@ int main() {
     scanf("%d", &sec);
     pid = fork();
 
-    if(pid < 0) {
+    if(pid < 0) { //error
       perror("fork");
       exit(1);
     }
-    else if(pid == 0) {
+    else if(pid == 0) { //child
       fprintf(stderr, "hello\n");
       sleep(sec);
       fprintf(stderr, "bye\n");
       exit(0);
-    } else {
+    } else { //parent
       printf("create process...\n");
     }
 
