@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     printf("st_nlink = %d\n", (int)stat_buf.st_nlink);
     printf("st_uid = %d\n", (int)stat_buf.st_uid);
     printf("st_gid = %d\n", (int)stat_buf.st_gid);
-    printf("%d\n", (int)stat_buf.st_rdev);
+    printf("st_rdev = %d\n", (int)stat_buf.st_rdev);
     printf("%d\n", (int)stat_buf.st_size);
     printf("%d\n", (int)stat_buf.st_atime);
     printf("%d\n", (int)stat_buf.st_mtime);
