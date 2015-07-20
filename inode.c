@@ -18,9 +18,9 @@ int main(int argc, char **argv)
     printf("st_gid = %d\n", (int)stat_buf.st_gid);
     printf("st_rdev = %d\n", (int)stat_buf.st_rdev);
     printf("st_size = %d\n", (int)stat_buf.st_size);
-    printf("%d\n", (int)stat_buf.st_atime);
-    printf("%d\n", (int)stat_buf.st_mtime);
-    printf("%d\n", (int)stat_buf.st_ctime);
+    printf("st_atime = %d\n", (int)stat_buf.st_atime);
+    printf("st_mtime = %d\n", (int)stat_buf.st_mtime);
+    printf("st_ctime = %d\n", (int)stat_buf.st_ctime);
 
     const time_t t = stat_buf.st_atime;
     printf("%s\n", ctime(&t));
