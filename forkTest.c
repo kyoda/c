@@ -7,7 +7,8 @@
 
 #define rep(i, n) for(int i = 0; i < n; i++) //init in loop > c99
 
-void sigchld_handler(int x) {
+void sigchld_handler(int x)
+{
 
   int chld;
 
@@ -20,6 +21,18 @@ void sigchld_handler(int x) {
 
 }
 
+void child_main()
+{
+
+  int t = 0;
+  while(1) {
+    sleep(10);
+    t += 10;
+    printf("%d sec\n", t);
+    if (t > 100) break; 
+  }
+
+}
 
 int main() {
   int sec;
@@ -46,7 +59,7 @@ int main() {
     }
     else if(pid == 0) { //child
       fprintf(stderr, "hello\n");
-      sleep(sec);
+      child_main();
       fprintf(stderr, "bye\n");
       exit(0);
     } else { //parent
