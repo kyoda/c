@@ -26,6 +26,7 @@ void child_main()
 
   int t = 0;
   while(1) {
+  //while(t > 100) {
     sleep(10);
     t += 10;
     printf("%d sec\n", t);
