@@ -5,7 +5,7 @@
 #include <sys/wait.h>
 #include <string.h>
 
-#define rep(i, n) for(int i = 0; i < n; i++) //init in loop > c99
+#define rep(i, n) for(int i = 0; i < n; i++) //init in loop ---> c99
 
 void sigchld_handler(int x)
 {
@@ -33,6 +33,11 @@ void child_main()
     if (t > 100) break; 
   }
 
+}
+
+void parent_main()
+{
+  
 }
 
 int main() {
