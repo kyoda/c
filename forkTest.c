@@ -35,11 +35,6 @@ void child_main()
 
 }
 
-void parent_main()
-{
-  
-}
-
 int main() {
   int sec;
   signal(SIGCHLD, sigchld_handler);
