@@ -21,16 +21,14 @@ void sigchld_handler(int x)
 
 }
 
-void child_main()
+void child_main(int sec)
 {
-
   int t = 0;
   while(1) {
   //while(t > 100) {
-    sleep(10);
-    t += 10;
+    sleep(1);
+    if (sec < ++t) break; 
     printf("%d sec\n", t);
-    if (t > 100) break; 
   }
 
 }
@@ -60,7 +58,7 @@ int main() {
     }
     else if(pid == 0) { //child
       fprintf(stderr, "hello\n");
-      child_main();
+      child_main(sec);
       fprintf(stderr, "bye\n");
       exit(0);
     } else { //parent
