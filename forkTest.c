@@ -63,6 +63,7 @@ int main() {
       exit(0);
     } else { //parent
       printf("create process...\n");
+      printf("again.\n");
     }
 
   }
