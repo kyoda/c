@@ -7,7 +7,7 @@
 
 #define rep(i, n) for(int i = 0; i < n; i++) //init in loop ---> c99
 
-void sigchld_handler(int x)
+void sigchld_handler()
 {
 
   int chld;
@@ -63,6 +63,7 @@ int main() {
       exit(0);
     } else { //parent
       printf("create process...\n");
+      sigchld_handler();
       printf("again.\n");
     }
 
