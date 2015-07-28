@@ -13,6 +13,7 @@ void sigchld_handler()
   int chld;
 
   chld = waitpid(-1, NULL, WNOHANG);
+  printf("chld = %d\n", chld);
 
   if(chld == -1) {
     perror("wait");
