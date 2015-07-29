@@ -54,18 +54,24 @@ int main() {
     pid = fork();
 
     if(pid < 0) { //error
+
       perror("fork");
       exit(1);
+
     }
     else if(pid == 0) { //child
+
       fprintf(stderr, "hello\n");
       child_main(sec);
       fprintf(stderr, "bye\n");
       exit(0);
+
     } else { //parent
+
       printf("create process...\n");
       sigchld_handler();
       printf("again.\n");
+
     }
 
   }
