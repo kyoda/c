@@ -10,15 +10,9 @@
 void sigchld_handler()
 {
 
-  int chld;
-
-  chld = waitpid(-1, NULL, WNOHANG);
-  printf("chld = %d\n", chld);
-
-  if(chld == -1) {
-    perror("wait");
-    exit(1);
-  }
+  int status = 0;
+  waitpid(-1, &status, WNOHANG);
+  printf("status = %d\n", status);
 
 }
 
