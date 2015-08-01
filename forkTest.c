@@ -32,15 +32,15 @@ int main() {
   int sec;
   signal(SIGCHLD, sigchld_handler);
   
-  char *a = "aiueo";
-  rep(i, strlen(a)) {
-    printf("%d: %c\r", i, a[i]);
-    fflush(stdout);
-    sleep(1);
-  }
-  printf("\n");
+  //char *a = "aiueo";
+  //rep(i, strlen(a)) {
+  //  printf("%d: %c\r", i, a[i]);
+  //  fflush(stdout);
+  //  sleep(1);
+  //}
+  //printf("\n");
 
-  for(;;) {
+  //for(;;) {
 
     int pid;
     printf("Please set time [sec] (child process alive time...)\n");
@@ -63,14 +63,16 @@ int main() {
     } else { //parent
 
       printf("create process...\n");
-      sigchld_handler();
+      //sigchld_handler();
+      int status = 0;
+      wait(&status);
       printf("again.\n");
 
     }
 
-    printf("loop...");
+    //printf("loop...");
 
-  }
+ //}
 
   return 0;
 
