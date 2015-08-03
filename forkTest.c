@@ -65,8 +65,8 @@ int main() {
       printf("create process...\n");
       //sigchld_handler();
       int status = 0;
-      //wait(&status);
-      waitpid(-1, &status, WNOHANG);
+      wait(&status);
+      //waitpid(-1, &status, WNOHANG);
       printf("again.\n");
 
     }
