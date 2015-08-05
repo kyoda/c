@@ -67,6 +67,7 @@ int main() {
       int status = 0;
       //wait(&status);
       //waitpid(-1, &status, WNOHANG);
+      //see /usr/src/kernels/2.6.32.*.el6.x86_64/include/linux/wait.h
       printf("WNOHANG = %d\n", WNOHANG);
       waitpid(-1, &status, 0);
       printf("again.\n");
