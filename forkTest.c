@@ -67,6 +67,7 @@ int main() {
       int status = 0;
       //wait(&status);
       //waitpid(-1, &status, WNOHANG);
+      printf("WNOHANG = %d\n", WNOHANG);
       waitpid(-1, &status, 0);
       printf("again.\n");
 
