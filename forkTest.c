@@ -40,7 +40,7 @@ int main() {
   //}
   //printf("\n");
 
-  //for(;;) {
+  for(;;) {
 
     int pid;
     printf("Please set time [sec] (child process alive time...)\n");
@@ -74,9 +74,9 @@ int main() {
 
     }
 
-    //printf("loop...");
+    printf("loop...");
 
- //}
+ }
 
   return 0;
 
