@@ -10,6 +10,9 @@
 int main()
 {
 
+  // 'open' use no buffer
+  // 'fopen' use buffer
+
   int fd = open("README.md", O_RDONLY);
   int fd2 = open("READMEEE.md", O_RDONLY);
   printf("%d\n", fd);
