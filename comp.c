@@ -7,9 +7,14 @@ int main()
 
   
   int fd = open("README.md", O_RDONLY);
-  int a = 0;
-  a = read(fd, 0, 32);
-  printf("%d\n", a);
+  int r = 0;
+  char buf[32];
+  r = read(fd, buf, 32);
+  printf("%d\n", r);
+  printf("%s\n", buf);
+
+
+
   close(fd);
 
   return 0;
