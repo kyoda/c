@@ -10,9 +10,9 @@ int main()
   int r = 0;
   char buf[32];
   r = read(fd, buf, 32);
-  printf("%d\n", r);
   printf("%s\n", buf);
-
+  r = read(fd, buf, 32);
+  printf("%s\n", buf);
 
 
   close(fd);
