@@ -11,6 +11,9 @@ int main()
   char buf[32];
   r = read(fd, buf, 32);
   printf("%s\n", buf);
+
+  printf("\n\n\n\n");
+
   r = read(fd, buf, 32);
   printf("%s\n", buf);
 
