@@ -10,12 +10,12 @@ int main()
   int r = 0;
   char buf[32];
   r = read(fd, buf, 32);
-  printf("%s\n", buf);
+  printf("%s", buf);
 
-  printf("\n\n\n\n");
+  printf("\n#####################\n");
 
   r = read(fd, buf, 32);
-  printf("%s\n", buf);
+  printf("%s", buf);
 
 
   close(fd);
