@@ -8,13 +8,13 @@ int main()
   
   int fd = open("README.md", O_RDONLY);
   int r = 0;
-  char buf[32];
-  r = read(fd, buf, 32);
+  char buf[1];
+  r = read(fd, buf, 1);
   printf("%s", buf);
 
   printf("\n#####################\n");
 
-  r = read(fd, buf, 32);
+  r = read(fd, buf, 1);
   printf("%s", buf);
 
 
